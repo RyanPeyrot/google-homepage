@@ -7,15 +7,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 #gmail, #images{
-    margin: 0.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
     color: black;
     text-decoration: none;
     background: linear-gradient(to top,transparent 0%,transparent 8px, grey 9px , grey 10px, transparent 12px) no-repeat;
     background-size: 0 100%;
-    transition: background-size 0.2s;
+    transition: background-size 0.1s;
 }
 
 #gmail:hover, #images:hover,
@@ -24,9 +28,34 @@
     background-size: 100% 100%;
 }
 
+#grid{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(img/9dot.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#grid:hover{
+    background-color: rgba(161, 161, 161, 0.3);
+    border: rgba(161, 161, 161, 0.3) 3px solid;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
 #sign-in{
     text-decoration:none;
-    margin: 0.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     margin-top: 0;
     color: white;
     border: royalblue 4px solid;
@@ -40,11 +69,6 @@
     border: rgb(126, 151, 222) 4px solid;    
 }
 
-#grid{
-    width: 0.1em;
-    height: 1em;
-}
-
 section{
     display: grid;
     place-items: center;
@@ -52,7 +76,93 @@ section{
 }
 
 #homepage-logo{
+    font-weight: bold;
     font-family: 'product-sans';
-    font-size: 10em;
+    font-size: 6em;
 
+}
+
+#bar{
+    max-width: 600px;
+    background: #fff;
+    height: 44px;
+    width: 550px;
+    margin-top : 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 4em;
+    padding: 0;
+}
+
+form{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+}
+
+#search-bar{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    word-wrap: break-word;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+    flex: 1;
+}
+
+#search-icon{
+    margin-left: 1em;
+    margin-top: 0.8em;
+    margin-bottom: auto;
+    height: auto;
+    width: 1em;
+    background: no-repeat;
+}
+
+#vocal{
+    margin-right: 1em;
+    margin-top: 0.7em;
+    margin-bottom: auto;
+    height: auto;
+    width: 1em;
+    background: no-repeat;
+}
+
+#bar:hover, #bar:focus-within{
+    outline: none;
+    border: transparent;
+    background: transparent;
+    box-shadow: 0 0 0.5em 0.1em lightgray;
+}
+
+#button{
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    margin-top: 1.5em;
+}
+
+#spcBetweenButton{
+    content: ' ';
+}
+.btn{
+    outline: none;
+    border: #f8f9fa 5px solid;
+    border-radius: 0.5em;
+    background: #f8f9fa;
+    padding: auto;
+    font-size: 1em;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0 1px lightgray ;
+}
+
+.gSearch, .lucky{
+    padding: 1em;
 }
